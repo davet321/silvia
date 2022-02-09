@@ -13,10 +13,10 @@ from datetime import datetime
 
 
 def create_config():
-    default_tset = '95'
+    default_tset = '94'
     default_kP = '12'
     default_kI = '0.1'
-    default_kD = '195'
+    default_kD = '200'
     if not os.path.isfile('params.conf'):
         with open('params.conf', 'w') as f:
             f.write('%s,%s,%s,%s' % (default_tset,
